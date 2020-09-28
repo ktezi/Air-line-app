@@ -1,0 +1,15 @@
+.header-wrapper{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	.header-title{
+		text-decoration: none;
+	}
+	a{
+		color: white;
+	}
+	.signout{
+		width: 70px;
+		font-size: 15px;
+	}
+}

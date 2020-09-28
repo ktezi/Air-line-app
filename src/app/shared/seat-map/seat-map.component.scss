@@ -1,0 +1,51 @@
+.seat_layout{
+    margin: 15px;
+    .seat-box{
+        height:18px;
+        width: 18px;
+    }
+    .checkedIn{
+        background-color: green;
+    }
+    .booked{
+        background-color: grey;
+    }
+    .wheelChair{
+       border: 1px solid red;
+    }
+    .infant{
+        border: 1px solid blue;
+    }
+    .available{
+    border: 1px solid grey;
+      background-color: white;
+    }
+    .midline{
+        background-color:blue;
+        z-index: -1;
+    }
+}
+
+.table-footer{
+    display: flex;
+    justify-content: space-between;
+    border: 1px #bfb9b9 solid;
+    padding: 20px;
+    margin: 16px;
+    .table-footer-booked{
+        padding: 8px;
+        background-color: green;
+      }
+    .table-footer-available{
+        padding: 8px;
+        border: 1px grey solid;
+      }
+    .table-footer-infant{
+        padding: 8px;
+        border: 1px solid blue;
+    }
+    .table-footer-wheelchair{
+        padding: 8px;
+        border: 1px solid red;
+    }
+  }

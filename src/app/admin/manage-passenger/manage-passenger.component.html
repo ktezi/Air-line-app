@@ -1,0 +1,128 @@
+<div class="row">
+  <div class="col-sm-4 col-md-4">
+    <mat-form-field>
+      <mat-select
+        #select
+        placeholder="Version"
+        (selectionChange)="applyFilter($event.value)"
+      >
+      <mat-option>Clear All</mat-option>
+        <mat-option *ngFor="let version of versions" [value]="version">
+          {{ version }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <!-- <button mat-flat-button color="warn" (click)="resetFilters()">Reset</button> -->
+  </div>
+
+  <button class="add" mat-stroked-button color="primary" (click)="openDialog()">
+    Add passsenger
+  </button>
+
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <!-- Ancillary services Column -->
+      <ng-container matColumnDef="ancillaryServices">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header4>
+          Ancillary Services
+        </th>
+        <td mat-cell *matCellDef="let element">
+          <ng-container
+            *ngFor="let item of element.ancillaryServices | keyvalue"
+          >
+            <div class="abc" *ngIf="item.value">
+              <span> {{ item.key }} </span> :
+              <span>{{ item.value }} </span>
+            </div>
+          </ng-container>
+        </td>
+      </ng-container>
+
+      <!-- seat-id Column -->
+      <ng-container matColumnDef="seatId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Seat Id</th>
+        <td mat-cell *matCellDef="let element" class="desc">
+          {{ element.seatId }}
+        </td>
+      </ng-container>
+
+      <!-- button Column -->
+      <ng-container matColumnDef="button">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Button</th>
+        <td mat-cell *matCellDef="let element">
+          <button
+            mat-stroked-button
+            color="primary"
+            (click)="openUpdateDialog(updateDialog, element)"
+          >
+            Update
+          </button>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+      <tr mat-row *matRowDef="let row; columns: columnsToDisplay"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </div>
+
+  <!-- Dialog -->
+  <ng-template class="myForm" #updateDialog>
+    <form ngNativeValidate [formGroup]="updatePass" (ngSubmit)="updatePassenger($event.target.value)">
+      <h1 mat-dialog-title>Update passenger</h1>
+      <div mat-dialog-content>
+        <mat-form-field>
+          <mat-label for="Name">Name</mat-label>
+          <input
+            formControlName="name"
+            name="name"
+            required
+            matInput
+          
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label for="passport">Passport</mat-label>
+          <input
+            formControlName="passport"
+            name="passport"
+            matInput
+            
+          />
+          <!-- <mat-error *ngIf="true">Due Date is required for Tasks</mat-error> -->
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label for="address">Address</mat-label>
+          <input
+            formControlName="address"
+            name="address"
+            matInput
+        
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Choose Date of Birth</mat-label>
+          <input
+            matInput
+            formControlName="dob"
+            [matDatepicker]="dateOfBirth"
+          />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="dateOfBirth"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #dateOfBirth></mat-datepicker>
+        </mat-form-field>
+        <br/>
+        <button mat-stroked-button color="primary" type="submit">submit</button>
+      </div>
+    </form>
+    <!-- <button mat-button (click)="onNoClick()">No Thanks</button> -->
+  </ng-template>
+
+</div>

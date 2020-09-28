@@ -1,0 +1,237 @@
+{
+  "flights": [
+    {
+      "id": 1,
+      "flightId": "F1",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7rsj-w2vFIusIt4cl5-BAi8sV-oHHydkxcX4KhDPhiSu3dl5sA&s",
+      "from": "Delhi",
+      "to": "Ranchi",
+      "departureTime": "1:00",
+      "arrivalTime": "2:30",
+      "duration": "1:30hrs",
+      "ancillaryServices": [
+        "meal"
+      ],
+      "specialMeals": [
+        "Burger",
+        "Chicken curry"
+      ],
+      "shoppingItems": [
+        "Dress",
+        "Jwellery"
+      ]
+    },
+    {
+      "id": 2,
+      "flightId": "F2",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ncTbPmelSEcN3SLdIAKbIDUTamx4symKQF_y6BTqHFq4ZYnhoA&s",
+      "from": "Bengaluru",
+      "to": "Mumbai",
+      "departureTime": "4:30",
+      "arrivalTime": "6:30",
+      "duration": "2:00hrs",
+      "ancillaryServices": [
+        "baggage"
+      ],
+      "shoppingItems": [],
+      "specialMeals": [
+        "Veg Meal"
+      ]
+    },
+    {
+      "id": 3,
+      "flightId": "F3",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqRpAwEuQJWobp5fJQ6bec8TRBjVjcsRl3FgUKIoR-SGGSzHLL&s",
+      "from": "Bengaluru",
+      "to": "Maldives",
+      "departureTime": "13:30",
+      "arrivalTime": "17:30",
+      "duration": "4:00hrs",
+      "ancillaryServices": [
+        "baggage",
+        "gadget"
+      ],
+      "shoppingItems": [],
+      "specialMeals": [
+        {
+          "id": "1",
+          "mealType": "Veg Meal"
+        }
+      ]
+    }
+  ],
+  "passengers": [
+    {
+      "id": "1",
+      "flightId": "F1",
+      "name": "Abhishek ",
+      "dob": "",
+      "address": "Bangalore",
+      "passport": "12345678",
+      "seatId": "5E",
+      "specialMeal": "1",
+      "infant": false,
+      "wheelChair": false,
+      "ischeckedIn": false,
+      "item": [
+        "1",
+        "abc",
+        "Mobile",
+        "Dress"
+      ],
+      "ancillaryServices": {
+        "meal": "Non-Veg Meal",
+        "baggage": null,
+        "gadgets": null,
+        "Baggage": "10Kg",
+        "gadget": "mobile"
+      }
+    },
+    {
+      "id": "2",
+      "flightId": "F1",
+      "name": "Vicky",
+      "dob": "",
+      "address": "Newyork",
+      "passport": "1234612ASDR",
+      "seatId": "10E",
+      "specialMeal": "1",
+      "infant": false,
+      "wheelChair": true,
+      "ischeckedIn": true,
+      "item": [
+        "1"
+      ],
+      "ancillaryServices": {
+        "meal": "Non-Veg Meal",
+        "baggage": "10KG",
+        "gadgets": "Tablet"
+      }
+    },
+    {
+      "id": "4",
+      "name": "subham  ",
+      "flightId": "F2",
+      "passport": "1234567",
+      "address": "dubai",
+      "seatId": "7D",
+      "ischeckedIn": false,
+      "infant": true,
+      "wheelChair": true,
+      "ancillaryServices": {
+        "meal": "NonVeg-Meal",
+        "baggage": "10KG",
+        "gadgets": "Tablet"
+      }
+    },
+    {
+      "id": "5",
+      "flightId": "F2",
+      "name": "Praneetha Munipelli",
+      "dob": "",
+      "address": "",
+      "passport": "",
+      "seatId": "3C",
+      "specialMeal": "2",
+      "ischeckedIn": true,
+      "infant": false,
+      "wheelChair": true,
+      "item": [
+        "1",
+        "2"
+      ],
+      "ancillaryServices": {
+        "meal": "Veg-Meal",
+        "baggage": "5KG",
+        "gadgets": "Tablet"
+      }
+    },
+    {
+      "id": "6",
+      "flightId": "F3",
+      "name": "Jaya Khare",
+      "dob": "",
+      "address": "",
+      "passport": "",
+      "seatId": "23A",
+      "ischeckedIn": false,
+      "specialMeal": "2",
+      "infant": true,
+      "wheelChair": false,
+      "item": [
+        "1",
+        "2"
+      ],
+      "ancillaryServices": {
+        "meal": "Non-Veg Meal",
+        "baggage": "baggage",
+        "gadgets": "Tablet",
+        "gadget": "gadget"
+      }
+    },
+    {
+      "id": "7",
+      "flightId": "F3",
+      "name": "Anirban Das",
+      "dob": "",
+      "address": "",
+      "passport": "",
+      "seatId": "2E",
+      "specialMeal": "2",
+      "ischeckedIn": true,
+      "infant": false,
+      "wheelChair": true,
+      "item": [
+        "1",
+        "2"
+      ],
+      "ancillaryServices": {
+        "meal": null,
+        "baggage": "5KG",
+        "gadgets": null,
+        "gadget": "gadget"
+      }
+    },
+    {
+      "id": "8",
+      "flightId": "F3",
+      "name": "Rohit Kumar",
+      "dob": "",
+      "address": "",
+      "passport": "",
+      "seatId": "2A",
+      "ischeckedIn": true,
+      "infant": true,
+      "wheelChair": false,
+      "specialMeal": "2",
+      "item": [
+        "1",
+        "2"
+      ],
+      "ancillaryServices": {
+        "meal": "Non-Veg Meal",
+        "baggage": null,
+        "gadgets": null
+      }
+    },
+    {
+      "id": "fq7N8na",
+      "name": "Annu",
+      "passport": "1AB4",
+      "address": "",
+      "seatId": "",
+      "infant": true,
+      "wheelChair": false,
+      "item": [],
+      "flightId": "F1",
+      "dob": "",
+      "ancillaryServices": {
+        "meal": "",
+        "baggage": "",
+        "gadgets": ""
+      },
+      "specialMeal": "",
+      "ischeckedIn": false
+    }
+  ]
+}

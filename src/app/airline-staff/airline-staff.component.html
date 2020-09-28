@@ -1,0 +1,26 @@
+<table class="table">
+  <caption>Details of All Flights</caption>
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Flight-Id</th> 
+      <th scope="col">from</th> 
+      <th scope="col">to</th> 
+      <th scope="col">departureTime</th>
+      <th scope="col">arrivalTime</th>  
+      <th scope="col">duration</th>  
+      <th scope="col">Action</th>  
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let flight of flights; let i=index"> 
+      <td>{{ flight['flightId'] }}</td> 
+      <td>{{ flight['from'] }}</td> 
+      <td>{{ flight['to'] }}</td> 
+      <td>{{ flight['departureTime'] }}</td> 
+      <td>{{ flight['arrivalTime'] }}</td> 
+      <td>{{ flight['duration'] }}</td> 
+      <button mat-stroked-button color="primary" (click)="onSelect(flight['flightId'])">Check In</button>
+      <button mat-stroked-button color="primary" (click)="onSelectInflight(flight['flightId'])">In Flight</button>
+  </tr> 
+  </tbody>
+</table>

@@ -1,0 +1,53 @@
+table {
+    width: 100%;
+  }
+  .ancillary-services{
+    margin: 18px;
+    button{
+      cursor: pointer;
+      margin: 5px;
+    }
+    .ancillary-heading{
+      font-weight: 600;
+    }
+    .specialmeals-heading{
+      font-weight: 600;
+    }
+    .shoppingitems-heading{
+      font-weight: 600;
+    }
+  }
+  .mat-form-field {
+    font-size: 14px;
+    /* width: 100%; */
+    float: left;
+  }
+  .mat-elevation-z8{
+    width: 100%;
+  
+  }
+  td, th {
+    width: 25%;
+    
+  }
+  th {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+  }
+  button{
+    float: left;
+    margin-top: 5px;
+  }
+ .add-update-btn{
+    display: none;
+  }
+  
+  .mat-stroked-button{
+      margin:5px;
+  }
+  .ancillary-header{
+      width: 500px;
+      margin: auto;
+      align-items: center;
+  }

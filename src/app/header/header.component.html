@@ -1,0 +1,14 @@
+
+<mat-toolbar color = "primary" class="header-wrapper">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<span class = "gap"><h1><a href="#" class="header-title">Airline-App</a></h1></span>
+	<span><a routerLink="admin" routerLinkActive="active"  *ngIf="isAdmin === 'true' && loggedIn === true"> Admin </a></span>
+	<span><a routerLink="airlinestaff" routerLinkActive="active" *ngIf="isAdmin === 'false' && loggedIn === true"> Airlinestaff </a></span>
+	<span class = "filler"></span>
+		<button type="button" (click)="signInWithGoogle()" *ngIf="loggedIn === false; else logout" mat-flat-button
+			color="primary">Sign In</button>
+		<ng-template #logout>
+		<button type="button" class="signout" (click)="signOut()">Sign out </button>
+		</ng-template>
+ </mat-toolbar>
+ <app-flight></app-flight>
