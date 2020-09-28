@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1601318064632,
+  "timestamp": 1601318370279,
   "index": "https://ktezi.github.io/Air-line-app/index.html",
   "assetGroups": [
     {
@@ -74,7 +74,7 @@
     "https://ktezi.github.io/Air-line-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://ktezi.github.io/Air-line-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://ktezi.github.io/Air-line-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://ktezi.github.io/Air-line-app/index.html": "18f01b676cd20e8f2e56b74ebba0bdc3411cd272",
+    "https://ktezi.github.io/Air-line-app/index.html": "d917ea8e1ba063524447b60b54096374d3974075",
     "https://ktezi.github.io/Air-line-app/main.bf9454f2841237d3dc1d.js": "d3b8a4c1a191326dec1e38be06b30e3a159d65e2",
     "https://ktezi.github.io/Air-line-app/manifest.webmanifest": "9a9ceea14ab6a69c41552c3bc771ee37ae8863c7",
     "https://ktezi.github.io/Air-line-app/polyfills-es5.1fcef6d0296ce035cc4f.js": "5a6cdf967427778c0de5b87d53815bd14e8a73ab",
