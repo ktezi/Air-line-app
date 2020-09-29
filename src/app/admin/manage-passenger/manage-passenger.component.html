@@ -70,6 +70,52 @@
     </table>
     <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
   </div>
+  
+<!-- Dialog -->
+<ng-template class="myForm" #dialog_template>
+  <form ngNativeValidate [formGroup]="pass" (ngSubmit)="addPassenger()">
+    <h1 mat-dialog-title>Add passenger</h1>
+    <div mat-dialog-content>
+      <mat-form-field>
+        <mat-label for="Name">Name</mat-label>
+        <input formControlName="name" name="name" required matInput [(ngModel)]="name" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label for="passport">Passport</mat-label>
+        <input formControlName="passport" name="passport" matInput [(ngModel)]="passport" />
+        <!-- <mat-error *ngIf="true">Due Date is required for Tasks</mat-error> -->
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label for="address">Address</mat-label>
+        <input formControlName="address" name="address" matInput [(ngModel)]="address" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label for="contact">Contact</mat-label>
+        <input formControlName="contact" name="contact" matInput [(ngModel)]="contact" />
+      </mat-form-field>
+
+     
+        <mat-form-field appearance="fill">
+          <mat-label>Choose Date of Birth</mat-label>
+          <input matInput formControlName="dateOfBirth" [matDatepicker]="dateOfBirth">
+          <mat-datepicker-toggle matSuffix [for]="dateOfBirth"></mat-datepicker-toggle>
+          <mat-datepicker #dateOfBirth></mat-datepicker>
+        </mat-form-field>
+    
+
+        <mat-checkbox color="primary"
+        formControlName="wheelchairRequired" [(ngModel)]="wheelchairRequired">WheelChair</mat-checkbox>
+     
+        <mat-checkbox  color="primary"
+        formControlName="infant" [(ngModel)]="infant">Infant</mat-checkbox>
+     
+
+      <button mat-stroked-button color="primary" type="submit">submit</button>
+    </div>
+  </form>
+  <!-- <button mat-button (click)="onNoClick()">No Thanks</button> -->
+</ng-template>
 
   <!-- Dialog -->
   <ng-template class="myForm" #updateDialog>
