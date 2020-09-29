@@ -74,17 +74,11 @@
       "wheelChair": false,
       "ischeckedIn": false,
       "item": [
-        "1",
-        "abc",
         "Mobile",
         "Dress"
       ],
       "ancillaryServices": {
-        "meal": "Non-Veg Meal",
-        "baggage": null,
-        "gadgets": null,
-        "Baggage": "10Kg",
-        "gadget": "mobile"
+     
       }
     },
     {
@@ -104,7 +98,6 @@
       ],
       "ancillaryServices": {
         "meal": "Non-Veg Meal",
-        "baggage": "10KG",
         "gadgets": "Tablet"
       }
     },
@@ -120,7 +113,6 @@
       "wheelChair": true,
       "ancillaryServices": {
         "meal": "NonVeg-Meal",
-        "baggage": "10KG",
         "gadgets": "Tablet"
       }
     },
@@ -142,7 +134,6 @@
       ],
       "ancillaryServices": {
         "meal": "Veg-Meal",
-        "baggage": "5KG",
         "gadgets": "Tablet"
       }
     },
@@ -163,7 +154,6 @@
         "2"
       ],
       "ancillaryServices": {
-        "meal": "Non-Veg Meal",
         "baggage": "baggage",
         "gadgets": "Tablet",
         "gadget": "gadget"
@@ -187,7 +177,6 @@
       ],
       "ancillaryServices": {
         "meal": null,
-        "baggage": "5KG",
         "gadgets": null,
         "gadget": "gadget"
       }

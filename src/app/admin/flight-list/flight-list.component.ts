@@ -39,7 +39,7 @@ export class FlightListComponent implements OnInit {
     this.dataSource.sort = this.sort;
   }
   getData() {
-    this.http.get('http://localhost:5000/flights').subscribe(res => {
+    this.http.get('https://fake-rest-api3.herokuapp.com/flights').subscribe(res => {
       if (res) {
         // document.getElementById('loading').style.display = 'none';
       }

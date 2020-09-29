@@ -2,11 +2,15 @@
 	"admin": [
 		{
 			"email": "tejkhan730@gmail.com",
-			"isAdmin": true
+			"isAdmin": false
 		},
 		{
 			"email": "tezikhan786@gmail.com",
-			"isAdmin": false
+			"isAdmin": true
+		},
+		{
+			"email": "alamistekhar3@gmail.com",
+			"isAdmin": true
 		}
 	]
 }

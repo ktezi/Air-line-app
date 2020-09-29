@@ -8,6 +8,7 @@
       "resources": {
         "files": [
           "/favicon.ico",
+          "/example.png",
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
@@ -15,7 +16,7 @@
         ],
         "urls": [
 					"https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap",
-					"https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+          "https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
 				]
       }
     }, {
@@ -34,7 +35,7 @@
   "dataGroups": [
 		{
 			"name": "Flight-Apis",
-			"urls": [ "http://localhost:5000/flights", "http://localhost:5000/passengers" ],
+			"urls": [ "https://fake-rest-api3.herokuapp.com/flights", "https://fake-rest-api3.herokuapp.com/passengers" ],
 			"cacheConfig": {
 				"maxSize": 50,
 				"maxAge": "1h",

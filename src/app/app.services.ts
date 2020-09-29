@@ -12,8 +12,8 @@ const httpOptions = {
     providedIn: 'root',
   })
 export class FlightsServices {
-  private baseUrl = 'http://localhost:5000/flights/';
-  private baseUrll = 'http://localhost:5000/passengers/';
+  private baseUrl = 'https://fake-rest-api3.herokuapp.com/flights';
+  private baseUrll = 'https://fake-rest-api3.herokuapp.com/passengers/';
   constructor(private http: HttpClient) {}
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),

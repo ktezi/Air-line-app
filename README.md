@@ -3,18 +3,15 @@
 # If needed Install Angular Material by runnning 
 `ng add @angular/material`
 
-# Data is hosted on JSON server:
-A data file db.json has been included in the src folder to host on the server.
-You just have to run `json-server -p 5000 --watch db.json` before `ng serve` 
+# Data is hosted on heroku as a fake rest API:
+
+# Login credential for admin and airlinestaff 
+After cloning the repo Inside src/app/data.json file you just need to add your email and isAdmin as true if you want to login as admin and if you want to login as airlinestaff just add your email and isAdmin as false.
 
 # To run production please do `ng serve --prod`
 
-# If you have to run as airline staff then Inside services/signin.services and header.component.ts file change adminEmail as '' otherwise because of auth gaurd it will not allow you to login as airlinestaff.
-
-# If you have to login as admin then Inside services/signin.services and header.component.ts file give your email Id as adminEmail otherwise because of auth gaurd it will not allow you to login as admin.
-
 # AirlineApp
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
 ## Development server
 
